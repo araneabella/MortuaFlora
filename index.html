@@ -116,9 +116,83 @@
     </div>
   </footer>
 
+
+
+  <!-- ============ FORMULÁRIO: CONSULTAR DISPONIBILIDADE ============ -->
+  <dialog id="dlg-interesse" class="dlg" aria-labelledby="dlg-titulo">
+    <button type="button" class="dlg__x" data-close aria-label="Fechar">&times;</button>
+    <form id="form-interesse" novalidate autocomplete="on">
+      <h2 id="dlg-titulo">Consultar disponibilidade</h2>
+      <p class="dlg__intro">Nossa equipe avalia cada pedido e entra em contato. Valores são informados somente após essa etapa.</p>
+
+      <label>Planta de interesse
+        <select name="planta" required></select>
+      </label>
+      <label>Nome completo
+        <input name="nome" type="text" autocomplete="name" required>
+      </label>
+      <div class="dlg__row">
+        <label>Celular (com DDD)
+          <input name="celular" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" required>
+        </label>
+        <label>E-mail
+          <input name="email" type="email" autocomplete="email" required>
+        </label>
+      </div>
+      <div class="dlg__row dlg__row--3">
+        <label>País
+          <input name="pais" type="text" value="Brasil" required>
+        </label>
+        <label>Estado
+          <input name="estado" type="text" maxlength="40" placeholder="SP" required>
+        </label>
+        <label>CEP
+          <input name="cep" type="text" inputmode="numeric" placeholder="00000-000" required>
+        </label>
+      </div>
+      <label>Finalidade do cultivo
+        <select name="finalidade" required>
+          <option value="">Selecione…</option>
+          <option>Coleção pessoal</option>
+          <option>Pesquisa científica</option>
+          <option>Conservação e produção de sementes</option>
+          <option>Outra</option>
+        </select>
+      </label>
+      <label>Possui estufa ou ambiente controlado adequado?
+        <select name="estufa" required>
+          <option value="">Selecione…</option>
+          <option>Sim</option>
+          <option>Não</option>
+          <option>Em construção</option>
+        </select>
+      </label>
+
+      <!-- armadilha para robôs: pessoas não veem este campo -->
+      <div class="hp" aria-hidden="true"><label>Não preencha <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+
+      <label class="dlg__check">
+        <input name="lgpd" type="checkbox" required>
+        <span>Li e aceito o <a href="privacidade.html" target="_blank" rel="noopener">aviso de privacidade</a> e autorizo o uso destes dados para análise do meu pedido.</span>
+      </label>
+
+      <p id="form-msg" class="dlg__error" role="alert" hidden></p>
+      <button type="submit" class="dlg__submit">Enviar pedido</button>
+    </form>
+
+    <div id="form-ok" class="dlg__ok" hidden>
+      <h2>Pedido recebido</h2>
+      <p>Registramos seu interesse em <strong id="ok-planta"></strong>. Nossa equipe entrará em contato pelo celular ou e-mail informados.</p>
+      <p class="dlg__protocolo" id="ok-protocolo"></p>
+      <button type="button" class="dlg__submit" data-close>Fechar</button>
+    </div>
+  </dialog>
+
   <!-- Scripts -->
   <script src="CFG.js"></script>
   <script src="PLS.js"></script>
+  <script src="APP.js"></script>
   <script src="MIN.js"></script>
+  <script src="F0N.js"></script>
 </body>
 </html>
