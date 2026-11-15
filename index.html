@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mortua Flora</title>
+  <meta name="description" content="Mortua Flora: plantas exóticas, guias de jardinagem, ferramentas e o primeiro pronto-socorro de plantas de São Paulo.">
+  <link rel="icon" href="L0G.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="topbar">
+    <a class="topbar__logo" href="#topo" aria-label="Mortua Flora - início">
+      <img src="L0G.png" alt="Mortua Flora">
+    </a>
+    <nav class="topbar__nav" aria-label="Menu principal">
+      <a href="#plantas">Plantas</a>
+      <a href="#guias">Guias</a>
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#hospital">Hospital</a>
+      <a class="topbar__contact" id="link-fale-conosco" href="#" target="_blank" rel="noopener">Fale conosco</a>
+    </nav>
+  </header>
+
+  <main id="topo">
+
+    <!-- ============ PLANTAS ============ -->
+    <section id="plantas" class="section" aria-label="Plantas">
+      <div class="plants plants--featured" id="plantas-destaque"></div>
+      <div class="plants plants--grid" id="plantas-grade"></div>
+      <p class="hint hint--touch">Toque em uma planta para consultar a disponibilidade.</p>
+    </section>
+
+    <!-- ============ GUIAS ============ -->
+    <section id="guias" class="section" aria-label="Guias">
+      <div class="guides">
+        <a class="guide" href="GBI.pdf" target="_blank" rel="noopener">
+          <img src="GBI.png" alt="Capa do Guia Básico para Iniciantes em Jardinagem">
+          <span class="guide__title">Básico</span>
+          <span class="guide__sub">Para Iniciantes em Jardinagem</span>
+        </a>
+        <div class="guides__divider" aria-hidden="true"></div>
+        <a class="guide" href="GBE.pdf" target="_blank" rel="noopener">
+          <img src="GBE.png" alt="Capa do Guia de Plantas Exóticas">
+          <span class="guide__title">Avançado</span>
+          <span class="guide__sub">Para Plantio Especializado</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ FERRAMENTAS ============ -->
+    <section id="ferramentas" class="section" aria-label="Ferramentas">
+      <ul class="tools">
+        <li><img src="TSR.png" alt=""><span>Tesoura</span></li>
+        <li><img src="PNC.png" alt=""><span>Pinça</span></li>
+        <li><img src="ACH.png" alt=""><span>Ancinho</span></li>
+        <li><img src="LVS.png" alt=""><span>Luvas</span></li>
+        <li><img src="BFD.png" alt=""><span>Borrifador</span></li>
+        <li><img src="RGD.png" alt=""><span>Regador</span></li>
+        <li><img src="VS0.png" alt=""><span>Vaso</span></li>
+        <li><img src="PAP.png" alt=""><span>Pá</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ HOSPITAL ============ -->
+    <section id="hospital" class="section hospital" aria-label="Hospital de plantas">
+      <img class="hospital__icon" src="HPL.png" alt="Pronto-socorro de plantas">
+      <div class="hospital__body">
+        <p class="hospital__text">
+          Nos disponibilizamos para salvar todas as plantas em estado crítico e emergencial.<br>
+          Sejam elas comuns ou exóticas, serão cuidadas desde que tenham vida restando.<br>
+          Em nossas mãos, nenhuma planta morrerá.
+        </p>
+        <div class="hospital__address-row">
+          <a class="hospital__address" id="link-mapa" href="#" target="_blank" rel="noopener" aria-label="Abrir endereço no Google Maps">
+            <img src="PIN.png" alt="">
+            <address>
+              Avenida Professor Luiz Ignácio Anhaia Mello, 1363<br>
+              Vila Prudente<br>
+              São Paulo - SP
+            </address>
+          </a>
+          <span class="hospital__24h">24H</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer">
+    <a class="footer__item footer__mail" href="mailto:juheluani@uni9.edu.br">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="1.5"/><path d="M3 6l9 7 9-7"/></svg>
+      <span>mortuaflora@gmail.com</span>
+    </a>
+    <div class="footer__right">
+      <a class="footer__item" id="link-instagram" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>
+        <span>MortuaFlora</span>
+      </a>
+      <div class="footer__phones">
+        <a class="footer__item" id="link-telefone" href="#">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 5.8 5.8l1.4-2.2 4.3 1.7V18a2 2 0 0 1-2 2A15.5 15.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg>
+          <span>(11) 4293-9080</span>
+        </a>
+        <a class="footer__item" id="link-whatsapp" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9 8.5c.3 3 2.5 5.2 5.5 6l1.2-1.3-2-1-.8.7a4 4 0 0 1-1.8-1.8l.7-.8-1-2z" fill="currentColor" stroke="none"/></svg>
+          <span>(11) 94533-4323</span>
+        </a>
+      </div>
+      <img class="footer__logo" src="L0G.png" alt="">
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="CFG.js"></script>
+  <script src="PLS.js"></script>
+  <script src="MIN.js"></script>
+</body>
+</html>
